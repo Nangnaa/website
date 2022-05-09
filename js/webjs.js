@@ -148,3 +148,68 @@ window.addEventListener('load',function(){
 
   });
 
+
+		//스크롤 페이지 이동
+		var currentScroll = 0;
+        var tim;
+        window.onload = function () {
+            var box = document.getElementsByClassName('page');// box클래스 개수만큼 실행
+            for (var i = 0; i < box.length; i++) {
+                box[i].addEventListener("mousewheel", MouseWheelHandler, false);
+                box[i].addEventListener("DOMMouseScroll", MouseWheelHandler, true);
+            }
+        }
+        function MouseWheelHandler(e) {
+            e.preventDefault();
+            var delta = 0;
+            if (!e) {e = window.e;}
+            if (e.wheelDelta) {
+                delta = e.wheelDelta / 20; //한번에 마우스휠 되는 크기비율 (20~120)
+                if (window.opera) {delta = -delta;}
+            }
+            else if (e.detail){
+                delta = -e.detail / 3;
+            }
+ 
+            var p = e.target.parentElement;
+            var index = Array.prototype.indexOf.call(p.children, e.target);
+            var boxArr = e.target.parentElement.children;
+            currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+            var NextTarget = currentScroll;
+            if (delta > 0) {
+                if (index > 0) {
+                    var no = (index - 1);
+                    NextTarget = boxArr[no].offsetTop;
+                }
+            }
+            else if (delta < 0)
+            {
+                if (index < boxArr.length - 1) {
+                    var no = (index + 1);
+                    NextTarget = boxArr[no].offsetTop;
+                }
+            }
+            // 애니메이션
+            clearInterval(tim);
+            tim = setInterval(tran, 1);
+            function tran() {
+                var speed = 50;// 이동속도 숫자가 작아질수록 느려짐
+                if (currentScroll == NextTarget) {
+                    clearInterval(tran);
+                } else {
+                    if (currentScroll - speed > NextTarget)
+                    {
+                        currentScroll -= speed;
+                    }
+                    else if (currentScroll + speed < NextTarget)
+                    {
+                        currentScroll += speed;
+                    }
+                    else
+                    {
+                        currentScroll = NextTarget;
+                    }
+                    window.scrollTo(0, currentScroll);
+                }
+            }
+        }
