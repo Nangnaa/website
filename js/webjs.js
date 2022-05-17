@@ -71,12 +71,12 @@ window.addEventListener('load',function(){
 				}//for(var i=0; i<menuList.length; i++){닫기
 
 
-		},10);//timer = setInterval(function(){닫기
+		},60);//timer = setInterval(function(){닫기
 
 	});//document.addEventListener('scroll', function(){닫기
 
-    //메뉴리스트에 클릭했을때 해당 콘텐츠로 이동하는 값을 계산하는 함수
-     
+	
+    //	하는 값을 계산하는 함수
 	for(var i=0; i<menuList.length; i++){
 		menuList[i].index = i;
 		menuList[i].addEventListener('click',function(e){
@@ -86,7 +86,6 @@ window.addEventListener('load',function(){
 			 n=e.currentTarget.index;
 			 h=window.innerHeight
 			 targety=n*h;
-             // console.log("n : "+n+", targety : "+targety);
 			 moveCategory(offsety,targety);
 		});
 
@@ -97,8 +96,8 @@ window.addEventListener('load',function(){
 		moving=true;
 		var timer = setInterval(function(){
            if(target > current){//스크롤이 아래로 이동할때
-                  if(Math.abs(target-current)>8){//스크롤이 아래로 가는 애니메이션의 진행여부를 결정하는 제어문
-					  current += 8;
+                  if(Math.abs(target-current)>100){//스크롤이 아래로 가는 애니메이션의 진행여부를 결정하는 제어문
+					  current += 100;
 				  }else{
 					current = target;
 					moving = false;
@@ -117,8 +116,8 @@ window.addEventListener('load',function(){
 		   }
 		   else{//스크롤이 위로 이동할때
 
-		       	    if(Math.abs(target-current)>8){//스크롤이 아래로 가는 애니메이션의 진행여부를 결정하는 제어문
-					  current -= 8;
+		       	    if(Math.abs(target-current)>100){//스크롤이 아래로 가는 애니메이션의 진행여부를 결정하는 제어문
+					  current -= 100;
 				    }else{
 					current = target;
 					moving = false;

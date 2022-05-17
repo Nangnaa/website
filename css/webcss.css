@@ -6,10 +6,10 @@
 html {
 	/* overflow: hidden; */
 	scroll-behavior: smooth;
-	font-family: "Open Sans", sans-serif;
+	font-family:'NanumBarunGothic', sans-serif;
 	font-size: 1em;
 }
-ul, ol {
+ul, ol, li {
 	list-style: none;
 }
 a {
@@ -17,6 +17,9 @@ a {
 	color: #000;
 }
 
+.container{
+	margin: 0 auto;
+}
 
 #GNB {
 	position: fixed;
@@ -26,26 +29,158 @@ a {
 	width: 16px;
 	height: 176px;
 }
-#GNB li {
+#GNB a {
 	margin-top: 16px;
 	width: 16px;
 	height: 16px;
 	background-color: transparent;
 	border: 2px solid #000;
-	border-radius: 8px;
+	border-radius: 50%;
+	display: block;
+	text-indent: -9999px;
+
 }
-#GNB li:first-child {
+#GNB a:first-child {
 	margin-top: 0;
 }
-#GNB li.active {
+#GNB a.active {
 	background-color: #000;
+	
 }
-#GNB li a {
-	display: block;
-	width: 16px;
-	height: 16px;
-	text-indent: -9999px;
-}
+
 section {
 	padding: 20px;
+}
+.section_full{
+	width: 100%;
+}
+
+.Home_export{
+	width: 1333px;
+	height: 99px;
+	margin: 0 0 61px;
+	/* padding: 34px 500px 40px 80px; */
+}
+
+.homepersonal{	
+	width: 187px;
+	height: 19px;
+	margin: 40px 60px 40px 80px;
+}
+
+.devision {
+	display: inline-block;
+	width: 1px;
+	height: 16px;
+	margin: 40px 0;
+	background-color: #ccc;
+  }
+.homework{
+	width: 42px;
+	height: 19px;
+	margin: 40px 0 40px 80px;
+}
+.imgheaderbadge {
+	width: 16px;
+	height: 16px;
+	margin: 0 82px 53px 0;
+	
+  }
+
+.homeprofile{
+	width: 55px;
+	height: 19px;
+	margin: 40px 0 40px ;
+}
+
+.firstpage{
+	margin: 72px 0 0 80px;
+}
+
+.maintext{
+	margin-bottom:15px;
+}
+
+.mainglass{
+	position: relative;
+	right: 25px;
+	z-index: 2;
+}
+
+.smilemo, .passionate, .mainpuzzle1{
+	position: relative;
+	right: 50px;
+}
+.togglebg{
+	position: absolute;
+	z-index: 1;
+}
+
+.toggleglass{
+	position: absolute;
+	z-index: 2;
+}
+.developer{
+	margin:0 0 0 220px;
+}
+
+
+.particleblue{
+	width: 30px;
+	height: 32px;
+	margin: 142px 84px 0 346px;
+}
+
+.myintro{
+	position: relative;
+	display: inline-block;
+	margin: 0 auto;
+	width: 414px;
+	height: 35px;
+	text-align: center;
+	top: 50px;
+}
+
+.particlegreen{
+	position: relative;
+	width: 30px;
+	height: 32px;
+	margin: 0 0 0 83px;
+	top: -50px;
+}
+
+.particleyellow{
+	position: relative;
+	width: 30px;
+	height: 32px;
+	margin: 45px 0 0 0 ;
+	top: 120px;
+}
+
+.Rectangle {
+	position: relative;
+	top: 150px;
+  width: 127px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 40px;
+  background-color: #000;
+}
+.viewmore{
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	width: 90px;
+	height: 19px;
+}
+
+.ardown{
+	display: block;
+	position: relative;
+	top: 170px;
+	margin: 0 auto;
+	width: 18px;
+  height: 24px;
+  /* margin: 20px 81px 0 53px; */
 }
