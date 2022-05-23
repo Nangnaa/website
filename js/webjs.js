@@ -41,7 +41,7 @@ window.addEventListener('load',function(){
 		timer = setInterval(function(){
                 clearInterval(timer);     
                 offsety = window.pageYOffset;
-                //console.log('offsety:' + offsety)
+                // console.log('offsety:' + offsety)
 
 				if(offsety < pageList[1].offsetTop){
 					n=0;
