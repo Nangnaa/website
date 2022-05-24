@@ -61,12 +61,12 @@ window.addEventListener('load',function(){
 					n=5;
 				}
 
-				for(var i=0; i<menuList.length; i++){
-                          if(i == n){
-							  menuList[i].classList.add('active');
-						  }else{
-							  menuList[i].classList.remove('active');
-						  }
+				// for(var i=0; i<menuList.length; i++){
+                //           if(i == n){
+				// 			  menuList[i].classList.add('active');
+				// 		  }else{
+				// 			  menuList[i].classList.remove('active');
+				// 		  }
 
 				}//for(var i=0; i<menuList.length; i++){닫기
 

@@ -19,6 +19,16 @@ a {
 
 .container{
 	margin: 0 auto;
+	width: 100%;
+}
+.innercon{
+	margin: 0 auto;
+	width: 1333px;
+}
+.page{
+	border-bottom: solid 2px #000;
+	height: 100vh;
+	width: 100%;
 }
 
 #GNB {
@@ -184,3 +194,226 @@ section {
   height: 24px;
   /* margin: 20px 81px 0 53px; */
 }
+
+.number01{
+	width: 127px;
+	height: 74px;
+	z-index: 1;
+}
+.desktop{
+	width: 624px;
+	height: 499px;
+	position: relative;
+	z-index: 2;
+	top: 60px;
+	left: -140px;
+}
+.mainbox{
+	
+}
+.centerbox{
+	display: flex;
+	margin-top: 185px;
+}
+.centerbox2{
+	float: right;
+}
+.rightbox{
+	display: flex;
+	flex-direction: column;
+}
+.webpage{
+	width: 300px;
+	height: 36px;
+	margin:55px 0 0 0;
+	/* padding: 30px; */
+	font-family: NanumGothic;
+	font-size: 32px;
+	font-weight: bold;
+	letter-spacing: -0.8px;
+  	color: #000;
+	box-sizing: border-box;
+}
+
+.desktoppage{
+	width: 500px;
+	height: 64px;
+	margin: 32px 0 34px 0;
+	font-family: NanumGothic;
+	font-size: 28px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: -0.8px;
+	color: #000;
+	display: flex;
+}
+
+.facing{
+	width: 56px;
+  height: 56px;
+  margin: 0 0 0 40px;
+}
+
+.tap{
+	width: 358px;
+  height: 73px;
+  /* margin: 34px 35px 35px 76px; */
+  font-family: NanumGothic;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: -0.8px;
+  color: #666;
+  line-height: 100%;
+}
+
+.btnclick{
+	width: 127px;
+  height: 40px;
+  margin: 34px 2px 34px 0px;
+  padding: 11px 18px 10px 19px;
+  border-radius: 40px;
+  background-color: #9960f1;
+}
+
+.hr{
+	width: 475px;
+	color: #d8d8d8;
+}
+
+.tech{
+	display: flex;
+}
+
+.lang{
+	width: 46px;
+  height: 20px;
+  margin-top: 13px;
+  font-family: NanumGothic;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  text-align: center;
+  color: #fff;
+  border-radius: 4px;
+}
+.html{
+	background-color: #ff7604;
+}
+
+.webfile{
+	width: 79px;
+  height: 19px;
+  margin: 11px 4px 13px 83px;
+  font-family: NanumGothic;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #999;
+}
+.link{
+	width: 19px;
+  height: 19px;
+  margin: 13px 71px 12px 20px;
+  object-fit: contain;
+}
+
+.css{
+	background-color: #3e5af4;
+}
+
+.javascript{
+	background-color: #fec74c;
+}
+
+.number02{
+	width: 127px;
+	height: 74px;
+	margin-left: 200px;
+	float: right;
+	z-index: 1;
+	
+	
+}
+
+.dsk2{
+	position: relative;
+	width: 624px;
+	height: 499px;
+	z-index: 2;
+	top: -15px; 
+	left: 10px;
+	float: right;
+}
+
+.page3{
+
+}
+/* .triangle{
+	width: 99px;
+	height: 99px;
+}
+
+.hire{
+	width: 646px;
+  height: 215px;
+  margin: 70px 2px 59px 19px;
+  object-fit: contain;
+}
+
+.constme{
+	width: 326px;
+  height: 42px;
+  margin: 119px 138px 11px 2px;
+  object-fit: contain;
+}
+.imgparticleYellow{
+	width: 30px;
+  height: 32px;
+  margin: 153px 2px 100px 42px;
+  background-color: #fec74c;
+}
+.introme{
+	width: 251px;
+  height: 79px;
+  margin: 11px 62px 34px 2px;
+  font-family: NanumGothic;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.8px;
+  color: #000;
+}
+.imgparticleBlue{
+	width: 30px;
+  height: 32px;
+  margin: 47px 7px 212px 85px;
+  background-color: #3c64f4;
+}
+.imgparticleGreen{
+	width: 30px;
+  height: 32px;
+  margin: 34px 1px 47px 57px;
+  background-color: #65bb7a;
+}
+.callme{
+	width: 369px;
+  height: 369px;
+  margin: 59px 63px 180px 5px;
+}
+
+.hello{
+	width: 241px;
+  height: 76px;
+  margin: 129px 50px 80px 56px;
+  object-fit: contain;
+
+} */
