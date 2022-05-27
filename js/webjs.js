@@ -12,11 +12,11 @@ window.addEventListener('load',function(){
 	var pageList = [];     
 	
 	//각콘텐츠들을 배열변수 pageList에 각각 입력
-	for(var i=0; i<container.children.length; i++){
-		if(container.children[i].tagName == "SECTION"){
-			pageList.push(container.children[i]);
-		}
-	}
+	// for(var i=0; i<container.children.length; i++){
+	// 	if(container.children[i].tagName == "SECTION"){
+	// 		pageList.push(container.children[i]);
+	// 	}
+	// }
 
 	//SECTION의 높이를 설정
     function init(){
@@ -61,12 +61,12 @@ window.addEventListener('load',function(){
 					n=5;
 				}
 
-				// for(var i=0; i<menuList.length; i++){
-                //           if(i == n){
-				// 			  menuList[i].classList.add('active');
-				// 		  }else{
-				// 			  menuList[i].classList.remove('active');
-				// 		  }
+				for(var i=0; i<menuList.length; i++){
+                          if(i == n){
+							  menuList[i].classList.add('active');
+						  }else{
+							  menuList[i].classList.remove('active');
+						  }
 
 				}//for(var i=0; i<menuList.length; i++){닫기
 

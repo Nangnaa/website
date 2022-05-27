@@ -1,13 +1,15 @@
 * {
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	box-sizing: border-box;
+
 }
 html {
 	/* overflow: hidden; */
 	scroll-behavior: smooth;
 	font-family:'NanumBarunGothic', sans-serif;
 	font-size: 1em;
+	width: 1333px;
 }
 ul, ol, li {
 	list-style: none;
@@ -19,14 +21,13 @@ a {
 
 .container{
 	margin: 0 auto;
-	width: 100%;
+	width: 1333px;
 }
 .innercon{
 	margin: 0 auto;
 	width: 1333px;
 }
 .page{
-	border-bottom: solid 2px #000;
 	height: 100vh;
 	width: 100%;
 }
@@ -69,7 +70,6 @@ section {
 	width: 1333px;
 	height: 99px;
 	margin: 0 0 61px;
-	/* padding: 34px 500px 40px 80px; */
 }
 
 .homepersonal{	
@@ -139,16 +139,19 @@ section {
 	width: 30px;
 	height: 32px;
 	margin: 142px 84px 0 346px;
+	position: relative;
+	left: -100px;
 }
 
 .myintro{
 	position: relative;
 	display: inline-block;
-	margin: 0 auto;
+	/* margin: 0 auto; */
 	width: 414px;
 	height: 35px;
 	text-align: center;
 	top: 50px;
+	left: -100px;
 }
 
 .particlegreen{
@@ -157,6 +160,7 @@ section {
 	height: 32px;
 	margin: 0 0 0 83px;
 	top: -50px;
+	left: -100px;
 }
 
 .particleyellow{
@@ -165,11 +169,12 @@ section {
 	height: 32px;
 	margin: 45px 0 0 0 ;
 	top: 120px;
+	left: -100px;
 }
 
 .Rectangle {
 	position: relative;
-	top: 150px;
+	top: 300px;
   width: 127px;
   height: 40px;
   margin: 0 auto;
@@ -188,11 +193,10 @@ section {
 .ardown{
 	display: block;
 	position: relative;
-	top: 170px;
+	top: 320px;
 	margin: 0 auto;
 	width: 18px;
   height: 24px;
-  /* margin: 20px 81px 0 53px; */
 }
 
 .number01{
@@ -226,7 +230,6 @@ section {
 	width: 300px;
 	height: 36px;
 	margin:55px 0 0 0;
-	/* padding: 30px; */
 	font-family: NanumGothic;
 	font-size: 32px;
 	font-weight: bold;
@@ -259,7 +262,6 @@ section {
 .tap{
 	width: 358px;
   height: 73px;
-  /* margin: 34px 35px 35px 76px; */
   font-family: NanumGothic;
   font-size: 16px;
   line-height: normal;
@@ -459,14 +461,12 @@ section {
 	width: 1300px;
   height: 322px;
   background-color: #65bb7a;
-  display: flex;
 
 }
 
 .Contects{
 	width: 171px;
   height: 49px;
-  /* margin: 0 28px 50px 4px; */
   font-family: NanumGothic;
   font-size: 42px;
   font-weight: 800;
@@ -476,28 +476,27 @@ section {
   letter-spacing: normal;
   text-align: center;
   color: #fff;
-  
-
-	/* position: relative; */
-	/* top: 33px; */
+  margin: 0 auto;
+	position: relative; 
+	top: 33px;
 }
 
 
 .footer{
-	/* display: flex;
-	flex-direction: column; */
-	/* margin-bottom: 16px; */
-	margin: 0 auto;
+	width: 500px;
+	padding: 5px;
+	 display: block;
+	
 }
-.footerimg{
+.footerinfo img{
 	width: 30px;
 	height: 30px;
+	padding-top: 10px;
 }
 
 .footerinfo{
 	width: 190px;
   height: 28px;
-  /* margin: 50px 0 18px 13px; */
   font-family: NanumGothic;
   font-size: 24px;
   font-weight: bold;
@@ -506,8 +505,10 @@ section {
   line-height: normal;
   letter-spacing: normal;
   color: #fff;
-  /* display: flex; */
-	flex-direction: column;
+  padding-top: 40px;
+  margin: 0 auto;
+  position: relative;
+	left: -70px;
 }
 .footerinfo a {
 	color: #fff;
